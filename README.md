@@ -1,2 +1,2 @@
 # DevOps
-Vagrant Development Box
+Ubuntu Development Box
