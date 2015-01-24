@@ -7,7 +7,7 @@ Ubuntu Development Box
 
 # Information
 
-|           |                   |
+|  # Information                |
 | ----------|------------------ |
 | Hostname  | devbox            |
 | IP        | 192.168.33.10     |
