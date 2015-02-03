@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-	# Set Base Box
+# Set Base Box
     config.vm.box = "ubuntu/trusty64"
 
     # Set VM Hostname
