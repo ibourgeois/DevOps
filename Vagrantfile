@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	end
 
     # Set IP Address
-    config.vm.network :private_network, ip: "192.168.33.10"
+    config.vm.network "public_network"
 
     # Configure Port Forwarding
     config.vm.network "forwarded_port", guest: 80, host: 8000
@@ -28,6 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.network "forwarded_port", guest: 35729, host: 35729
 
 	# Provision Development Environment
+	config.vm.provision "shell", path: "config.sh"
 	config.vm.provision "shell", path: "provision.sh"
 	
 end
